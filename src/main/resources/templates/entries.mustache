@@ -1,0 +1,23 @@
+{{> header}}
+<div class="container">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Datetime</th>
+            <th scope="col">Hostname</th>
+            <th scope="col">Completed</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#entries}}
+            <tr>
+                <td>{{addedAt}}</td>
+                <td>{{hostname}}</td>
+                <td>{{completed}}</td>
+            </tr>
+        {{/entries}}
+        </tbody>
+    </table>
+</div>
+{{> footer}}
