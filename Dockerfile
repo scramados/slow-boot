@@ -1,2 +1,3 @@
 FROM tomcat:9.0-jre11
-COPY build/libs/slow-boot-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/slow-boot.war
+ENV VERSION '0.0.1'
+COPY build/libs/slow-boot-${VERSION}-SNAPSHOT-plain.war /usr/local/tomcat/webapps/slow-boot.war

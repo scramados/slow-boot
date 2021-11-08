@@ -1,3 +1,6 @@
-# Only include build folder
-*
-!build
+src
+.gradle
+.github
+.idea
+gradle
+kustomize
