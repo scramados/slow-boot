@@ -23,10 +23,6 @@ jobs:
         uses: gradle/gradle-build-action@v2.0-rc.3
         with:
           arguments: war
-      - name: ls build
-        run: ls -l build/
-      - name: ls build/libs
-        run: ls -l build/libs
       - name: Log into registry ${{ env.REGISTRY }}
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
